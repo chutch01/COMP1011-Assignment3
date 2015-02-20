@@ -7,14 +7,14 @@
  *
  */
 public class GiantPlanet extends Planet implements IHasMoons, IHasRings {
-
+	//holds if its gas or ice
 	private String _type;
+	//constructor
 	public GiantPlanet(String name, double diameter, double mass, String type, boolean ringCount, int moonCount ) {
 		super(name, diameter, mass);
 		this._type = type;
-		// TODO Auto-generated constructor stub
 	}
-
+//implement interface for hasMoons
 	@Override
 	public boolean hasMoons() {
 		// TODO Auto-generated method stub
@@ -27,10 +27,10 @@ public class GiantPlanet extends Planet implements IHasMoons, IHasRings {
 		return false;
 		}
 	}
-
+//implement interface for hasRings
 	@Override
 	public boolean hasRings() {
-		// TODO Auto-generated method stub
+		
 		if(this._ringCount > 0){
 			return true;
 		}
